@@ -1,0 +1,48 @@
+/* Countdown font */
+@font-face {
+    font-family: MyFont;
+    src: url(digital.ttf);
+}
+
+/* Background stuff */
+
+body{
+    background-color: #7189FF;
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    top: 49%;
+    left: 48%;
+    transform: translate(-49%, -55%);
+    text-align: center;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.info{
+    font-family: MyFont;
+    font-size: 140px;
+}
+
+html{
+    background-color: #7189FF;
+    background-size: cover;
+}
+
+canvas{
+    z-index: 2;
+}
+
+/* Text above countdown */
+
+.text{
+    text-align: center;
+    color: #ffffff6b;
+    font-size: 28px;
+    width: 100%;
+    top: 20%;
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+}
