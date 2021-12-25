@@ -86,7 +86,7 @@ createSnowFlakes();
 
 function countDown(){
     var today = new Date();
-    var eventDate = new Date("December 25, 2021 00:00:00");
+    var eventDate = new Date("December 25, 2022 00:00:00");
 
     var currentTime = today.getTime();
     var eventTime = eventDate.getTime();
