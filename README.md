@@ -2,7 +2,7 @@
 
 A countdown timer for Christmas: https://countdown-christmas-timer.netlify.app
 
-There may be some glitch (I'll fix that soon)
+Not yet responsive to phone sizes (I'll fix that soon)
 
 Can't wait for Christmas!
 
