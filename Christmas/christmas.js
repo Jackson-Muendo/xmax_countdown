@@ -103,8 +103,8 @@ function countDown(){
     sec%=60;
 
     h = (h < 10) ? "0"+h : h;
-    mins = (h < 10) ? "0"+mins : mins;
-    sec = (h < 10) ? "0"+sec : sec;
+    mins = (mins < 10) ? "0"+mins : mins;
+    sec = (sec < 10) ? "0"+sec : sec;
 
     document.getElementById("days").innerHTML =days;
     document.getElementById("h").innerHTML =h;
