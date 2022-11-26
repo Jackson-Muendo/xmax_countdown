@@ -1,45 +1,32 @@
-body {
-  background-color: #f6f6f6;
-  padding: 0;
-  margin: 0;
-  font-family: 'Ubuntu';
-}
+function countdown() {
+  let now = new Date();
+  let evenDate = new Date(2019, 11, 25);
 
-#main {
-  width: 100%;
-  height: 100vh;
-  background-image: url('https://source.unsplash.com/random/1000x1000');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  let actualTime = now.getTime();
+  let eventTime = evenDate.getTime();
+  let remTime = eventTime - actualTime;
 
-.countdownContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  background-color: rgba(255,255,255,0.5);
-  padding: 20px;
-  border-radius: 5px;
-}
+  let s = Math.floor(remTime / 1000);
+  let m = Math.floor(s / 60);
+  let h = Math.floor(m / 60);
+  let d = Math.floor(h / 24);
 
-.christmas {
-  font-size: 4rem;
-  text-transform: uppercase;
-}
-.counter {
-  font-size: 4rem;
-}
+  h %= 24;
+  m %= 60;
+  s %= 60;
 
-@media (max-width: 1200px) {
-  
-  .christmas {
-    font-size: 3rem;
-    text-transform: uppercase;
-  }
-  .counter {
-    font-size: 2rem;
-  }
-}
+  h = h < 10 ? '0' + h : h;
+  m = m < 10 ? '0' + m : m;
+  s = s < 10 ? '0' + s : s;
+
+  document.querySelector('#days').textContent = d;
+  document.querySelector('#hours').textContent = h;
+  document.querySelector('#minutes').textContent = m;
+  document.querySelector('#seconds').textContent = s;
+
+  setTimeout(countdown, 1000)
+
+
+};
+
+countdown();
