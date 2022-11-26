@@ -1,4 +1,4 @@
-function countdown() {
+export function countdown() {
   let now = new Date();
   let evenDate = new Date(2019, 11, 25);
 
